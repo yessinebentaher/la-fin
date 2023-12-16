@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>title</title>
+    <link rel="stylesheet" href="home.css">
+    <style>
+        input[type="text"],input[type="mail"],input[type="password"],input[type="number"],input[type="date"],textarea{
+                width:100%;
+                margin:12px;
+                padding:8px;
+                border-color:#ccc;
+                border-style: solid;
+                border-width:1px;
+            }
+            .btn{
+                background-color:#DED983;
+                height:1.2cm;
+                color:#345071;
+                font-family: "Trebuvhet MS",Verdana,sans-serif;
+                
+            }
+            
+
+            
+    </style>
+</head>
+<body style="margin:10%">
+    
+        <header >
+                
+                    <h1>CONTACT </h1>
+                    <pre>                                               🍁vous devez remplir ce formulaire</pre>
+                    
+                
+                
+                
+            <hr>
+            </header>
+            <section>
+            
+            <form>
+            <table>
+                <tr>
+                    <td>            <label for="first name">First name*   </label>
+                    </td>
+                    
+                    <td>            <input type="text" placeholder="yassine" onkeyup="nameValidation1()" id="firstname" required minlength="3"><p id="f"></p>
+                    </td>
+                
+                </tr>
+                <tr>
+                    <td><label for="Last name">Last name*    </label></td>
+                    <div>
+                    <td>            <input placeholder="ben taher" onkeyup="nameValidation2()" type="text" id="Lastname"  minlength="3"><p id="l"></p> </td>
+                    </div>
+                </tr>
+                <tr>
+                    <td>            <label for="Address">Adresse    </labe>   </td>
+                    <div>
+                        <td>            <textarea name="address" id="Address"  cols="30" rows="5"></textarea>
+                    
+                        </td>
+                    </div>               
+                </tr>
+                <tr>
+                    <td>            <label for="Phone number">Phone number*    </label>
+                    </td>
+                    <div>
+                    <td>            <input type="number" minlength="8" maxlength="8" id="Phonenumber" required maxlength="8" ><p id="num"></p>
+                    </td>
+                    </div>
+                </tr>
+                <tr>
+                    <td>            <label >Date of birth*    </label>
+                    </td>
+                    <div>
+                    <td>            <input type="date" required >
+                    </td>
+                    </div>
+                </tr>
+                <tr>
+                    <td>            <label for="email">Email*    </label>
+                    </td>
+                <div>    
+                    <td>            <input title="erreur" type="mail" placeholder ="conact@exemple.com" name="email" pattern=".+gmail.com" required >
+                    </td>
+                </div>
+                </tr>
+                <tr>
+                    <td>            <label for="pass">mot de passe*    </label>
+                    </td>
+                    <div>
+                    <td>            <input id="password" name="password" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@#$%^&+=]).{4,}$" type="password"  id="pass" name="password"  required  placeholder="Exemple5%6" title="!ERREUR!(symbole/chiffre/lettres majuscule et minuscule)!!" ><p id="pas"></p>
+                    </td>
+                <tr>
+                    <td>
+                        <label for="conf pass">confirmation mot de passe*</label>
+                    </td>
+                    <td>
+                        <input id="confirmation" name="password" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@#$%^&+=]).{4,}$" type="password"  id="conpass" name="password1"  required  placeholder="Exemple5%6" title="!ERREUR!(symbole/chiffre/lettres majuscule et minuscule)!!" ><p id="con"></p>
+                    </td>
+                </tr>
+                    </div>
+                </tr>
+                <tr>
+                    <td>            
+                    </td>
+                    <div>
+                    <td>            <input class="btn" id="submit" type="submit" value="submit" onclick="passvalidation()">
+                                    <input class="btn" type="reset" value="reset">
+                    
+                    </td>
+                    </div>
+                </tr>
+
+            </table>
+            </form>
+            
+            
+            </section>
+            <script src="verification.js"></script>
+            </header><footer>  
+            <table  width="135%">
+            <tr >
+                <p><a href="https://www.Yessine ben taher.com">©Yessine bentaher</a> 2020</p>
+                <p><a href="index.html">Retour a l'index</a></p>
+            </tr>
+                
+            </table>
+
+            </footer>
+
+    
+</body>
+</html>
